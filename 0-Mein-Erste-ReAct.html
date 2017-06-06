@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='Content-type' content='text/html; charset=utf-8'>
+		<Title>0 - Mein Erste ReAct App</Title>
+	</head>
+	<body>
+		<div id="AppContainer"></div>
+		<script type="text/javascript" src="ReActLibraries/react.js"></script>
+		<script type="text/javascript" src="ReActLibraries/react-dom.js"></script>
+		<script type="text/javascript">
+			var Greeting = React.createElement(
+			  'h1',
+			  null,
+			  'Grüße, das ist eine ReAct Shell!'
+			);
+			var deContainer = document.getElementById('AppContainer');
+			ReactDOM.render(Greeting, deContainer);
+		</script>
+	</body>
+</html>
